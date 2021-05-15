@@ -1,0 +1,128 @@
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    height: 15vh;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    justify-content: space-between;
+    background-color: white;
+    font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar .logo img {
+    width: 60px;
+    margin-left: 30px;
+}
+
+.navbar .navlinks ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .navlinks ul li {
+    padding: 20px;
+}
+
+.navbar .navlinks ul li a {
+    color: rgb(78, 78, 78);
+    transition: .5s ease;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.navbar .navlinks ul li a:hover {
+    color: #f57528;
+}
+
+.navbar .language {
+    margin-top: 10px;
+}
+
+.navbar .language img {
+    transform: translateY(2px);
+}
+
+.navbar .language select {
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 0;
+    background: white;
+    padding: 8px 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar .language select:hover {
+    cursor: pointer;
+}
+
+.navbar .signup-btn {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.navbar .signup-btn button {
+    background: #f57528;
+    color: white;
+    border: none;
+    padding: 15px 18px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: .8s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar .signup-btn button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+
+.navbar .signup-btn button img {
+    width: 12px;
+    margin-right: 3px;
+}
+
+@media (max-width: 1000px) {
+    .burger {
+        z-index: 999;
+        position: fixed;
+        cursor: pointer;
+        top: 3%;
+        right: 3%;
+    }
+    .navbar .logo img {
+        margin: 0;
+    }
+    .burger .line {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 5px;
+        background: #f57528;
+    }
+    .navbar {
+        height: 100%;
+        flex-direction: column;
+        right: 0;
+        align-items: center;
+        text-align: center;
+        clip-path: circle(100px at 100% 0%);
+        -webkit-clip-path: circle(100px at 100% 0%);
+        transition: all .7s ease-out;
+    }
+    .navbar.open {
+        clip-path: circle(1100px at 90% 10%);
+        -webkit-clip-path: circle(1100px at 90% 10%);
+    }
+    .navbar .navlinks ul {
+        flex-direction: column;
+    }
+    .navbar .signup-btn {
+        margin: 0;
+        margin-right: -10px;
+    }
+}

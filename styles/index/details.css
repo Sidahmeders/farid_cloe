@@ -1,0 +1,47 @@
+
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details h1 {
+    color: #ef8b2a;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    color: #ff8000;
+    margin: 15px;
+    font-weight: 500;
+}
+
+.details ul li {
+    color: rgb(68, 68, 68);
+    padding: 15px;
+    font-weight: 300;
+}
+
+.details p {
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 20px;
+    max-width: 75vw;
+    text-align: center;
+    color: black;
+    word-spacing: 1px;
+}
+
+.details p span {
+    color: #ff8000;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .details {
+        padding: 0 40px;
+    }
+}

@@ -1,0 +1,386 @@
+
+::selection {
+	background: transparent;
+}
+
+.signup_container {
+	margin: 0 4%;
+	margin-top: 15vh;
+	padding: 20px;
+	background-color: #fdcfa5;
+}
+
+a {
+	color: orange;
+	transition: .8s ease;
+}
+
+a:hover {
+	color: rgb(255, 123, 0);
+}
+
+.form {
+	background: rgb(255, 255, 255);
+	padding: 40px;
+	max-width: 600px;
+	margin: 40px auto;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(138, 138, 138, 0.342);
+}
+
+.tab-group {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.tab-group li a {
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	background: rgba(160, 179, 176, 0.25);
+	color: #a0b3b0;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .8s ease;
+}
+
+.tab-group li a:hover {
+	background: orange;
+	color: #ffffff;
+}
+
+.tab-group .active a {
+	background: #f57528;
+	color: #ffffff;
+}
+
+.tab-content > div:last-child {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	color: #636363;
+	font-weight: 300;
+	margin: 0 0 40px;
+}
+
+label {
+	position: absolute;
+	transform: translateY(-14px);
+	background: white;
+	padding: 0 10px;
+	left: 13px;
+	color: rgb(100, 100, 100);
+	transition: all 0.5s ease;
+	--webkit-backface-visibility: hidden;
+	font-size: 20px;
+}
+
+label .req {
+	margin: 2px;
+	color: orange;
+}
+
+label.active {
+	transform: translateY(-24px);
+	left: 2px;
+	font-size: 16px;
+}
+
+label.active .req {
+	opacity: 0;
+}
+
+label.highlight {
+	color: #ffffff;
+}
+
+input, textarea {
+	font-size: 22px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 12px;
+	background: none;
+	background-image: none;
+	border: 2px solid rgba(182, 182, 182, 0.4);
+	border-radius: 5px;
+	color: #303030;
+	transition: border-color .5s ease, box-shadow .5s ease;
+}
+
+input:focus, textarea:focus {
+	outline: 0;
+	border-color: orange;
+}
+
+textarea {
+	border: 2px solid #a0b3b0;
+	resize: vertical;
+}
+
+.field-wrap {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.field-wrap.option {
+	border-radius: 5px;
+	height: 45px;
+}
+
+.field-wrap.option label {
+	transform: translateY(10px);
+	display: block;
+	color: rgb(54, 54, 54);
+}
+
+.field-wrap.option input{
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	text-align: right;
+}
+
+.field-wrap.option input[type='radio']:after {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+	position: absolute;
+	top: 15%;
+	right: 3%;
+}
+
+.field-wrap.option input[type='radio']:checked:after {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: orange;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+	position: absolute;
+	top: 15%;
+	right: 3%;
+}
+
+.top-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.top-row > div {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+
+.top-row > div:last-child {
+	margin: 0;
+}
+
+.button {
+	border: 0;
+	outline: none;
+	border-radius: 0;
+	padding: 15px 0;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	background: #f57528;
+	color: #ffffff;
+	transition: all 0.8s ease;
+}
+
+.button:hover, .button:focus {
+	cursor: pointer;
+	background: orange;
+}
+
+.button-block {
+	display: block;
+	width: 100%;
+	border-radius: 3px;
+}
+
+.forgot {
+	margin-top: 20px;
+	text-align: right;
+}
+
+/* select box styles */
+
+.selection {
+	border-radius: 5px;
+	border: 2px solid rgba(182, 182, 182, 0.4);
+	padding-right: 20px;
+}
+
+.selection .text {
+	color: rgb(85, 85, 85);
+	transform: translate(12px, -14px);
+	background: white;
+	width: fit-content;
+	padding: 0 10px;
+	font-size: 18px;
+}
+
+.selection select {
+	width: 100%;
+	border: none;
+	outline: none;
+	background: white;
+	font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 18px;
+	color: rgb(0, 0, 0);
+	padding-left: 40px;
+	padding-bottom: 22px;
+	padding-top: 8px;
+}
+
+
+/* check box styles */
+
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #303030;
+}
+
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 3%;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.container .checkmark:after {
+	left: 8px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.container input:checked ~ .checkmark {
+	background-color: orange;
+}
+
+
+@media (max-width: 500px) {
+	.tab-group li a {
+		font-size: 1em;
+		white-space: nowrap;
+	}
+	.form {
+		padding: 20px;
+	}
+	.button {
+		font-size: 1.1em;
+	}
+	.top-row > div {
+		width: 90%;
+		margin: 0;
+		padding: 0;
+	}
+	.field-wrap {
+		margin: 40px 0;
+		padding: 0;
+	}
+	.field-wrap.option {
+		transform: translateY(-10px);
+	}
+	.field-wrap.option:nth-child(1) {
+		transform: translateY(-25px);
+	}
+	.field-wrap.selection {
+		transform: translateY(20px);
+	}
+	.field-wrap label {
+		transform: translateY(-12px);
+	}
+	.top-row .field-wrap label {
+		transform: translateY(10px);
+	}
+	input {
+		margin: 20px 0;
+		padding: 7px;
+		width: 70vw;
+	}
+	#signup div:nth-child(1) {
+		margin: 12px 0;
+	}
+	#signup div:nth-child(3) label {
+		margin-top: 20px;
+	}
+	label.active {
+		color: rgb(170, 170, 170);
+	}
+}
+
+@media (max-width: 400px) {
+	.form {
+		padding: 10px;
+	}
+	.tab-group li a {
+		font-size: .8em;
+	}
+	.signup_container label,
+	.signup_container input {
+		font-size: 1em;
+	}
+	.field-wrap .container {
+		transform: translateX(-5px);
+	}
+}
